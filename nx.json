@@ -1,5 +1,5 @@
 {
-  "npmScope": "url-shortner",
+  "npmScope": "client",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": {
@@ -11,12 +11,12 @@
     "nx.json": "*"
   },
   "projects": {
-    "url-shortner": {
+    "client": {
       "tags": []
     },
-    "url-shortner-e2e": {
+    "client-e2e": {
       "tags": [],
-      "implicitDependencies": ["url-shortner"]
+      "implicitDependencies": ["client"]
     },
     "api": {
       "tags": []
