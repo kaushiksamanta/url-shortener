@@ -1,4 +1,4 @@
-version: "3"
+version: '3.7'
 services:
   url-shortener-api:
     build:
@@ -7,16 +7,15 @@ services:
     image: url-shortener-api
     container_name: url-shortener-api
     ports:
-      - "3000:3000"
+      - "3333:3333"
     volumes:
       - .:/app
     links:
       - url-shortener-db
-
   url-shortener-client:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: client.Dockerfile
     image: url-shortener-client
     container_name: url-shortener-client
     ports:
@@ -25,7 +24,6 @@ services:
       - .:/app
     links:
       - url-shortener-api
-
   url-shortener-db:
     container_name: url-shortener-db
     image: mongo:4.2.3
