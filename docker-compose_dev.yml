@@ -10,6 +10,7 @@ services:
       - "3333:3333"
     volumes:
       - .:/app
+      - ./node_modules
     links:
       - url-shortener-db
   url-shortener-client:
@@ -22,10 +23,11 @@ services:
       - "4200:4200"
     volumes:
       - .:/app
+      - ./node_modules
     links:
       - url-shortener-api
   url-shortener-db:
     container_name: url-shortener-db
-    image: mongo:4.2.3
+    image: postgres:9.6.16
     ports:
-      - "27017:27017"
+      - "5432:5432"
