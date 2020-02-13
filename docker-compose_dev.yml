@@ -10,7 +10,7 @@ services:
       - "3333:3333"
     volumes:
       - .:/app
-      - ./node_modules
+      - node_modules
     links:
       - url-shortener-db
   url-shortener-client:
@@ -23,7 +23,7 @@ services:
       - "4200:4200"
     volumes:
       - .:/app
-      - ./node_modules
+      - node_modules
     links:
       - url-shortener-api
   url-shortener-db:
@@ -31,3 +31,6 @@ services:
     image: postgres:9.6.16
     ports:
       - "5432:5432"
+    volumes:
+      - ./postgresql:/var/lib/postgresql
+      - ./postgresql_data:/var/lib/postgresql/data
