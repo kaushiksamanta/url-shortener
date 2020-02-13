@@ -40,3 +40,5 @@ Thumbs.db
 
 postgresql
 postgresql_data
+*.env
+*.log
