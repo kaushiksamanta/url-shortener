@@ -25,8 +25,9 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "typeorm": "./node-modules/ts-node/dist -r tsconfig-paths/register ./node_modules/typeorm/cli.js --config apps/api/ormconfig.ts",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/.bin/typeorm --config apps/api/ormconfig.js",
     "typeorm:migrate": "npm run typeorm migration:generate -- -n",
+    "typeorm:create": "npm run typeorm migration:create -- -n",
     "typeorm:run": "npm run typeorm migration:run"
   },
   "private": true,
