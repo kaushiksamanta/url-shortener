@@ -9,6 +9,7 @@ WORKDIR /app
 # install and cache app dependencies
 COPY package.json /app/package.json
 RUN npm install
+RUN npm install -g ts-node
 
 # add app
 COPY . /app
