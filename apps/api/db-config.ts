@@ -1,7 +1,12 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
-import { Url1581652637001 } from './src/migrations/1581652637001-url';
 import * as entities from './src/entities';
-import * as migrations from './src/migrations';
+
+const contexts = (require as any).context('../../apps/api/src/migrations/', true, /\.ts$/);
+const migrations = contexts.keys()
+  .map(modulePath => contexts(modulePath))
+  .reduce((result, migrationModule) => {
+    result.concat(Object.keys(migrationModule).map(key => migrationModule[key]), [])
+  });
 
 export const dbConfig: TypeOrmModuleOptions = {
   type: 'postgres',
@@ -11,10 +16,7 @@ export const dbConfig: TypeOrmModuleOptions = {
   password: process.env.POSTGRES_PASSWORD,
   database: process.env.POSTGRES_DATABASE,
   entities: Object.values(entities),
-  // We are using migrations, synchronize should be set to false.
   synchronize: false,
-  // Run migrations automatically,
-  // you can disable this if you prefer running migration manually.
   migrationsRun: true,
   logging: true,
   migrations: Object.values(migrations)
