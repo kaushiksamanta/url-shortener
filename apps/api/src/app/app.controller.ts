@@ -10,4 +10,5 @@ export class AppController {
   getData(): Message {
     return this.appService.getData();
   }
+
 }
