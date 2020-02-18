@@ -4,9 +4,11 @@ import * as entities from './src/entities';
 const contexts = (require as any).context('../../apps/api/src/migrations/', true, /\.ts$/);
 const migrations = contexts.keys()
   .map(modulePath => contexts(modulePath))
-  .reduce((result, migrationModule) => {
-    result.concat(Object.keys(migrationModule).map(key => migrationModule[key]), [])
-  });
+  .reduce(
+    (result, migrationModule) =>
+      result.concat(Object.keys(migrationModule).map(key => migrationModule[key])),
+    []
+  );
 
 export const dbConfig: TypeOrmModuleOptions = {
   type: 'postgres',
