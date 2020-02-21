@@ -23,9 +23,9 @@ export class UrlController {
       if(data) {
           return res.redirect(data.url);
       }
-      return res.redirect('/api');
+      return res.redirect('/');
     } catch (error) {
-      return res.redirect('/api');
+      return res.redirect('/');
     }
   }
 }
