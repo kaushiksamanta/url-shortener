@@ -25,7 +25,10 @@
               "apps/client/src/favicon.ico",
               "apps/client/src/assets"
             ],
-            "styles": ["apps/client/src/styles.scss"],
+            "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "apps/client/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
