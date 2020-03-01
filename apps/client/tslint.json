@@ -2,6 +2,6 @@
   "extends": "../../tslint.json",
   "rules": {
     "directive-selector": [true, "attribute", "urlShortner", "camelCase"],
-    "component-selector": [true, "element", "url-shortner", "kebab-case"]
+    "component-selector": [true, "element", "url-shortener", "kebab-case"]
   }
 }

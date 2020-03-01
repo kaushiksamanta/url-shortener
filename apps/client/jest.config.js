@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'url-shortner',
+  name: 'url-shortener',
   preset: '../../jest.config.js',
-  coverageDirectory: '../../coverage/apps/url-shortner',
+  coverageDirectory: '../../coverage/apps/url-shortener',
   snapshotSerializers: [
     'jest-preset-angular/AngularSnapshotSerializer.js',
     'jest-preset-angular/HTMLCommentSerializer.js'

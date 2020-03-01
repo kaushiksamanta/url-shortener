@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('url-shortner', () => {
+describe('url-shortener', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
@@ -8,6 +8,6 @@ describe('url-shortner', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome to url-shortner!');
+    getGreeting().contains('Welcome to url-shortener!');
   });
 });

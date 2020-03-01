@@ -1,8 +1,32 @@
-<div style="text-align:center">
-  <h1>Welcome to url-shortner!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png"
-  />
-</div>
-<div>Message: {{ hello$ | async | json }}</div>
+<url-shortener-navbar></url-shortener-navbar>
+<section class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-sm-12">
+        <div class="promo">
+          <h1>Simple URL Shortener</h1>
+          <p class="description">The best URL shortener that you will ever find on the internet. Simple and easy to use and the best part is it's all open-source.</p>
+        </div>
+        <form #urlShortForm="ngForm" (ngSubmit)="urlShortForm.form.valid && onSubmit()" autocomplete="off" novalidate>
+          <div class="main-form">
+            <div class="row">
+              <div class="col-sm-10">
+                <div class="input-group">
+                  <input type="url" class="form-control main-input" pattern="https?://.+" name="url" value="" placeholder="Paste a long url"
+                    autocomplete="off" [(ngModel)]="originalUrl" #originalUrlText="ngModel" required>
+                </div>
+                <div *ngIf="urlShortForm.submitted && originalUrlText.invalid" class="invalid-url">
+                  <div *ngIf="originalUrlText.errors.required">Url is required</div>
+                  <div *ngIf="originalUrlText.errors.pattern">Must be a valid site URL</div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <button class="btn btn-primary btn-block main-button" type="submit">Shorten</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
