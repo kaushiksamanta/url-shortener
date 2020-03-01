@@ -18,10 +18,12 @@ html {
   height: 100%;
   font-family: $dancing-script;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 body {
   margin: 0;
-  background-color: $abstract-blue;
+  // background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+  background-repeat: no-repeat;
 }
