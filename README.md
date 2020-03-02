@@ -20,30 +20,31 @@
 > ### Url Shortener built using Nest js 🚀, Angular 🅰️ , Docker 🐳 inside Nrwl Nx workspace.
 
 # Pre-requisites :-
-####1. Docker
-####2. Docker Compose
-####3. Node js
-####4. Npm
+1. Docker
+2. Docker Compose
+3. Node js
+4. Npm
 
 # Usage :-
-###1) Create a Environment file (dev.env) in the root of the cloned project.
+1) Create a Environment file (dev.env) in the root of the cloned project.
 
 ```sh
 touch dev.env
 ```
 ###2) Set the below variables in the dev.env file
 
-| Name  | Value  |
-| ------------ | ------------ | ------------ |
-| POSTGRES_HOST  |  url-shortener-db |
-| POSTGRES_PORT  |  5432 |
-| POSTGRES_USER  |  postgres |
-| POSTGRES_PASSWORD  | 12345  |
-| POSTGRES_DATABASE | url-shortener  |
-| PORT (Api Server)  |  3333 |
-| APP_MODE  | DEV  |
-| RUN_MIGRATIONS | url-shortener  |
-| URL_DOMAIN | localhost
+| Name               | Value            |
+| ------------------ | ---------------- |
+| POSTGRES_HOST      | url-shortener-db |
+| POSTGRES_PORT      | 5432             |
+| POSTGRES_USER      | postgres         |
+| POSTGRES_PASSWORD  | 12345            |
+| POSTGRES_DATABASE  | url-shortener    |
+| PORT (Api Server)  | 3333             |
+| APP_MODE           | DEV              |
+| RUN_MIGRATIONS     | url-shortener    |
+| URL_DOMAIN         | localhost        |
+
 
 ###3) Build all the docker files using the shell script using dev as environment.
 
