@@ -3,6 +3,7 @@ import { CreateShortUrlRequestDto, ShortUrlResponseDto } from './url.dto';
 import { Repository } from 'typeorm';
 import { Url, Counter } from '../../entities';
 import { InjectRepository } from '@nestjs/typeorm';
+import { environment } from '../../environments/environment';
 import * as btoa from 'btoa';
 
 @Injectable()

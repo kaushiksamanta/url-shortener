@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'variables';
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
 
 h1,
 h2,
@@ -9,14 +9,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $dancing-script;
+  font-family: $font-family;
   font-weight: normal;
 }
 
 body,
 html {
   height: 100%;
-  font-family: $dancing-script;
+  font-family: $font-family;
   font-weight: normal;
   font-size: 25px;
 }

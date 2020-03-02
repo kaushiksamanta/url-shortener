@@ -1,3 +1,4 @@
 export const environment = {
-  production: false
+  production: false,
+  domain: process.env.URL_SHORTENER_DOMAIN
 };
