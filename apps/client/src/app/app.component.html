@@ -17,7 +17,7 @@
                 </div>
                 <div *ngIf="urlShortForm.submitted && originalUrlText.invalid" class="invalid-url">
                   <div *ngIf="originalUrlText.errors.required">Url is required</div>
-                  <div *ngIf="originalUrlText.errors.pattern">Must be a valid site URL</div>
+                  <div *ngIf="originalUrlText.errors.pattern">Url Must be a valid site URL</div>
                 </div>
               </div>
               <div class="col-sm-2">
@@ -26,6 +26,10 @@
             </div>
           </div>
         </form>
+        <div class="shorten-url" *ngIf="shortUrl">
+          <h2>Short URL</h2>
+          <a href="/api/{{shortUrl}}" target="_blank">localhost/api/{{shortUrl}}</a>
+        </div>
       </div>
     </div>
   </div>

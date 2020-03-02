@@ -1,4 +1,13 @@
 .main {
-  margin-top: 70px;
-  padding-top: 80px;
+  margin-top: 60px;
+  padding-top: 60px;
+}
+
+.shorten-url {
+  margin-top: 40px;
+  a {
+    background: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+  }
 }
