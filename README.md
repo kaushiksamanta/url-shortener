@@ -62,6 +62,13 @@ docker-compose -f docker-compose_dev.yml up
 docker-compose -f docker-compose_dev.yml down
 ```
 
+# Upcoming changes
+1) Setting up Nginx as a load balancer and reverse proxy.
+
+2) LRU Caching strategy for top frequent url's using Redis.
+
+3) Setup the project for production ready.
+
 # Author
 
 👤 **Kaushik Samanta**
