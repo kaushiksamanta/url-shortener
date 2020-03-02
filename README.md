@@ -31,7 +31,8 @@
 ```sh
 touch dev.env
 ```
-###2) Set the below variables in the dev.env file
+
+2) Set the below variables in the dev.env file
 
 | Name               | Value            |
 | ------------------ | ---------------- |
@@ -45,35 +46,36 @@ touch dev.env
 | RUN_MIGRATIONS     | url-shortener    |
 | URL_DOMAIN         | localhost        |
 
-
-###3) Build all the docker files using the shell script using dev as environment.
+3) Build all the docker files using the shell script using dev as environment.
 
 ```sh
 ./docker-build-all.sh dev
 ```
-###4) Run the project using docker compose.
+
+4) Run the project using docker compose.
 ```sh
 docker-compose -f docker-compose_dev.yml up
 ```
 
-###5) Stop the project using docker compose. (Optional)
+5) Stop the project using docker compose. (Optional)
 ```sh
 docker-compose -f docker-compose_dev.yml down
 ```
+
 # Author
 
-####👤 **Kaushik Samanta**
+👤 **Kaushik Samanta**
 
-####* Website: kaushiksamanta.github.io
-####* Github: [@kaushiksamanta](https://github.com/kaushiksamanta)
-####* LinkedIn: [@kaushik-samanta](https://linkedin.com/in/kaushik-samanta)
+* Website: kaushiksamanta.github.io
+* Github: [@kaushiksamanta](https://github.com/kaushiksamanta)
+* LinkedIn: [@kaushik-samanta](https://linkedin.com/in/kaushik-samanta)
 
 # 🤝 Contributing
 
-#### Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/kaushiksamanta/url-shortener/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/kaushiksamanta/url-shortener/issues).
 
 # Show your support
 
-####Give a ⭐️ if this project helped you!
+Give a ⭐️ if this project helped you!
 
 ***
