@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to url-shortener 👋</h1>
 <p>
   <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/kaushiksamanta/url-shortener?style=for-the-badge" />
+    <img alt="License" src="https://img.shields.io/github/license/kaushiksamanta/url-shortener?style=for-the-badge" />
   </a><a href="#" target="_blank">
   <img alt="Open Issues" src="https://img.shields.io/github/issues-raw/kaushiksamanta/url-shortener?style=for-the-badge">
   </a><a href="#" target="_blank">
