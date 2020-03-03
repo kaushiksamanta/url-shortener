@@ -43,10 +43,9 @@ touch dev.env
 | POSTGRES_DATABASE  | url-shortener    |
 | PORT (Api Server)  | 3333             |
 | APP_MODE           | DEV              |
-| RUN_MIGRATIONS     | url-shortener    |
 | URL_DOMAIN         | localhost        |
 
-3) Build all the docker files using the shell script using dev as environment.
+1) Build all the docker files using the shell script using dev as environment.
 
 ```sh
 ./docker-build-all.sh dev
