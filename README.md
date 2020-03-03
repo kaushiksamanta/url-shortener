@@ -68,6 +68,10 @@ docker-compose -f docker-compose_dev.yml down
 
 3) Setup the project for production ready.
 
+4) Add unit tests for api and frontend using jest.
+
+5) Configure Circle CI for docker build and unit tests.
+
 # Screenshots
 1) Url-shortener UI:-
 <img width="1440" alt="Screen Shot 2020-03-02 at 9 38 27 PM" src="https://user-images.githubusercontent.com/14096113/75737659-4fcbdc00-5cce-11ea-8167-6a3d4fe5294c.png">
