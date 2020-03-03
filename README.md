@@ -69,16 +69,17 @@ docker-compose -f docker-compose_dev.yml down
 3) Setup the project for production ready.
 
 # Screenshots
-1) Url-shortener UI
+1) Url-shortener UI:-
 <img width="1440" alt="Screen Shot 2020-03-02 at 9 38 27 PM" src="https://user-images.githubusercontent.com/14096113/75737659-4fcbdc00-5cce-11ea-8167-6a3d4fe5294c.png">
 
 <img width="1440" alt="Screen Shot 2020-03-02 at 9 38 47 PM" src="https://user-images.githubusercontent.com/14096113/75738532-91f61d00-5cd0-11ea-913a-137bbc050697.png">
 
-2) Docker compose
+2) Docker compose runner:-
 <img width="1332" alt="Screen Shot 2020-03-02 at 9 32 11 PM" src="https://user-images.githubusercontent.com/14096113/75737670-59554400-5cce-11ea-98f6-680039ebd74b.png">
 
-3) Docker build
+3) Docker build:-
 <img width="1332" alt="Screen Shot 2020-03-02 at 9 37 45 PM" src="https://user-images.githubusercontent.com/14096113/75737672-5c503480-5cce-11ea-90a6-b914db9eea66.png">
+
 # Author
 
 👤 **Kaushik Samanta**
