@@ -18,7 +18,7 @@ build_prod() {
   echo "============================================================="
   echo "Building docker image :- url-shortener-$image:$git_short_hash"
   echo "============================================================="
-  docker build -t "url-shortener-$image:$git_short_hash" -t "url-shortener-$image:$package_version" -f "$image-prod.Dockerfile" .
+  docker build -t "url-shortener-$image:$git_short_hash" -t "kaushiksamanta/url-shortener-$image:$package_version" -f "$image-prod.Dockerfile" .
   echo "============================================================="
   echo "Tagging docker image :- url-shortener-$image:$package_version"
   echo "============================================================="
