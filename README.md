@@ -14,6 +14,14 @@
   <img alt="Activity" src="https://img.shields.io/github/commit-activity/w/kaushiksamanta/url-shortener?style=for-the-badge">
   </a><a href="#" target="_blank">
   <img alt="Size" src="https://img.shields.io/github/languages/code-size/kaushiksamanta/url-shortener?style=for-the-badge">
+  </a><a href="#" target="_blank">
+  <img alt="Docker-api-pulls" src="https://img.shields.io/docker/pulls/kaushiksamanta/url-shortener-api?label=API-DOCKER-PULLS&style=for-the-badge">
+  </a><a href="#" target="_blank">
+  <img alt="Docker-client-pulls" src="https://img.shields.io/docker/pulls/kaushiksamanta/url-shortener-client?label=CLIENT-DOCKER-PULLS&style=for-the-badge">
+  </a><a href="#" target="_blank">
+  <img alt="Docker-api-size" src="https://img.shields.io/docker/image-size/kaushiksamanta/url-shortener-api/0.0.1?label=Url-Api-image&style=for-the-badge">
+  </a><a href="#" target="_blank">
+  <img alt="Docker-client-size" src="https://img.shields.io/docker/image-size/kaushiksamanta/url-shortener-client/0.0.1?label=Url-Client-image&style=for-the-badge">
   </a>
 </p>
 
@@ -71,6 +79,10 @@ docker-compose -f docker-compose_dev.yml down
 4) Add unit tests for api and frontend using jest.
 
 5) Configure Circle CI for docker build and unit tests.
+
+# Dockerhub images (Public)
+1) https://hub.docker.com/repository/docker/kaushiksamanta/url-shortener-api
+2) https://hub.docker.com/repository/docker/kaushiksamanta/url-shortener-client
 
 # Screenshots
 1) Url-shortener UI:-
