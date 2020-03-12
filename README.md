@@ -19,9 +19,9 @@
   </a><a href="#" target="_blank">
   <img alt="Docker-client-pulls" src="https://img.shields.io/docker/pulls/kaushiksamanta/url-shortener-client?label=CLIENT-DOCKER-PULLS&style=for-the-badge">
   </a><a href="#" target="_blank">
-  <img alt="Docker-api-size" src="https://img.shields.io/docker/image-size/kaushiksamanta/url-shortener-api/0.0.1?label=Url-Api-image&style=for-the-badge">
+  <img alt="Docker-api-size" src="https://img.shields.io/docker/image-size/kaushiksamanta/url-shortener-api/0.0.1?label=API-DOCKER-IMAGE&style=for-the-badge">
   </a><a href="#" target="_blank">
-  <img alt="Docker-client-size" src="https://img.shields.io/docker/image-size/kaushiksamanta/url-shortener-client/0.0.1?label=Url-Client-image&style=for-the-badge">
+  <img alt="Docker-client-size" src="https://img.shields.io/docker/image-size/kaushiksamanta/url-shortener-client/0.0.1?label=CLIENT-DOCKER-IMAGE&style=for-the-badge">
   </a>
 </p>
 
