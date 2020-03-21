@@ -14,6 +14,6 @@ RUN npm install -g ts-node
 # add app
 COPY . /app
 
-EXPOSE 3333
+EXPOSE 3333 7778
 
 CMD npm run start api
