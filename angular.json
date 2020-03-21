@@ -160,7 +160,9 @@
         "serve": {
           "builder": "@nrwl/node:execute",
           "options": {
-            "buildTarget": "api:build"
+            "buildTarget": "api:build",
+            "inspect": true,
+            "host": "0.0.0.0"
           }
         },
         "lint": {
