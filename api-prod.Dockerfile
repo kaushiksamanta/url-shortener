@@ -14,10 +14,19 @@ RUN cd /app && npm run build:api
 
 
 FROM node:alpine
+
 WORKDIR /app
+
+RUN mkdir node_modules
+
 COPY --from=build-stage /app/dist/apps/api .
-COPY --from=build-stage /app/node_modules ./node_modules
+
+RUN npm ci --only=production
+
 RUN npm install -g nodemon
+
 RUN ls -la
+
 EXPOSE 3333
+
 CMD [ "nodemon", "main.js" ]
