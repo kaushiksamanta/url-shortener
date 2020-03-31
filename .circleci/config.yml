@@ -18,16 +18,19 @@ jobs:
           <<: *npm_install
   check-formatting:
     <<: *defaults
+    <<: *npm_install
     steps:
       - checkout
       - run: npm run format:check
   lint:
     <<: *defaults
+    <<: *npm_install
     steps:
       - checkout
       - run: npm run lint
   test:
     <<: *defaults
+    <<: *npm_install
     steps:
       - checkout
       - run: npm run test
