@@ -1,4 +1,5 @@
-<h1 align="center">Welcome to url-shortener 👋 
+<h1 align="center">Welcome to url-shortener 👋 </h1>
+<h1 align="center">
   <a href="https://circleci.com/gh/kaushiksamanta/url-shortener" target="_blank">
     <img alt="License" src="https://circleci.com/gh/kaushiksamanta/url-shortener.svg?style=svg" />
   </a>
