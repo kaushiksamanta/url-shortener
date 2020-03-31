@@ -1,26 +1,26 @@
 <h1 align="center">Welcome to url-shortener 👋</h1>
 <p>
-  <a href="#" target="_blank">
+  <a href="https://github.com/kaushiksamanta/url-shortener/blob/master/LICENSE" target="_blank">
     <img alt="License" src="https://img.shields.io/github/license/kaushiksamanta/url-shortener?style=for-the-badge" />
-  </a><a href="#" target="_blank">
+  </a><a href="https://github.com/kaushiksamanta/url-shortener/issues?q=is%3Aopen+is%3Aissue" target="_blank">
   <img alt="Open Issues" src="https://img.shields.io/github/issues-raw/kaushiksamanta/url-shortener?style=for-the-badge">
-  </a><a href="#" target="_blank">
+  </a><a href="https://github.com/kaushiksamanta/url-shortener/issues?q=is%3Aissue+is%3Aclosed" target="_blank">
   <img alt="Closed Issues" src="https://img.shields.io/github/issues-closed-raw/kaushiksamanta/url-shortener?style=for-the-badge">
-  </a><a href="#" target="_blank">
+  </a><a href="https://github.com/kaushiksamanta/url-shortener/releases/tag/v0.0.2" target="_blank">
   <img alt="Tag" src="https://img.shields.io/github/v/tag/kaushiksamanta/url-shortener?style=for-the-badge">
-  </a><a href="#" target="_blank">
+  </a><a href="https://github.com/kaushiksamanta/url-shortener/releases/tag/v0.0.2" target="_blank">
   <img alt="Release" src="https://img.shields.io/github/v/release/kaushiksamanta/url-shortener?style=for-the-badge">
-  </a><a href="#" target="_blank">
+  </a><a href="https://github.com/kaushiksamanta/url-shortener/commits/master" target="_blank">
   <img alt="Activity" src="https://img.shields.io/github/commit-activity/w/kaushiksamanta/url-shortener?style=for-the-badge">
   </a><a href="#" target="_blank">
   <img alt="Size" src="https://img.shields.io/github/languages/code-size/kaushiksamanta/url-shortener?style=for-the-badge">
-  </a><a href="#" target="_blank">
+  </a><a href="https://hub.docker.com/repository/docker/kaushiksamanta/url-shortener-api/general" target="_blank">
   <img alt="Docker-api-pulls" src="https://img.shields.io/docker/pulls/kaushiksamanta/url-shortener-api?label=API-DOCKER-PULLS&style=for-the-badge">
-  </a><a href="#" target="_blank">
+  </a><a href="https://hub.docker.com/repository/docker/kaushiksamanta/url-shortener-client" target="_blank">
   <img alt="Docker-client-pulls" src="https://img.shields.io/docker/pulls/kaushiksamanta/url-shortener-client?label=CLIENT-DOCKER-PULLS&style=for-the-badge">
-  </a><a href="#" target="_blank">
+  </a><a href="https://hub.docker.com/repository/docker/kaushiksamanta/url-shortener-api/general" target="_blank">
   <img alt="Docker-api-size" src="https://img.shields.io/docker/image-size/kaushiksamanta/url-shortener-api/0.0.1?label=API-DOCKER-IMAGE&style=for-the-badge">
-  </a><a href="#" target="_blank">
+  </a><a href="https://hub.docker.com/repository/docker/kaushiksamanta/url-shortener-client" target="_blank">
   <img alt="Docker-client-size" src="https://img.shields.io/docker/image-size/kaushiksamanta/url-shortener-client/0.0.1?label=CLIENT-DOCKER-IMAGE&style=for-the-badge">
   </a>
 </p>
@@ -70,13 +70,14 @@ docker-compose -f docker-compose_dev.yml down
 ```
 
 # Upcoming changes
-1) Setting up Nginx as a load balancer and reverse proxy.
+
+1) ~~Setting up Nginx as a load balancer and reverse proxy.~~
 
 2) LRU Caching strategy for top frequent url's using Redis.
 
-3) Setup the project for production ready.
+3) ~~Setup the project for production ready.~~
 
-4) Add unit tests for api and frontend using jest.
+4) ~~Add unit tests for api and frontend using jest.~~
 
 5) Configure Circle CI for docker build and unit tests.
 
