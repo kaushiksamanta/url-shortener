@@ -1,4 +1,8 @@
-<h1 align="center">Welcome to url-shortener 👋 [![CircleCI](https://circleci.com/gh/kaushiksamanta/url-shortener.svg?style=svg)](https://circleci.com/gh/kaushiksamanta/url-shortener)</h1>
+<h1 align="center">Welcome to url-shortener 👋 
+  <a href="https://circleci.com/gh/kaushiksamanta/url-shortener" target="_blank">
+    <img alt="License" src="https://circleci.com/gh/kaushiksamanta/url-shortener.svg?style=svg" />
+  </a>
+</h1>
 <p>
   <a href="https://github.com/kaushiksamanta/url-shortener/blob/master/LICENSE" target="_blank">
     <img alt="License" src="https://img.shields.io/github/license/kaushiksamanta/url-shortener?style=for-the-badge" />
