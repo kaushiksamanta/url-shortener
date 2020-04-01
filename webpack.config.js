@@ -32,7 +32,7 @@ module.exports = (config, context) => {
  * @returns {Array} An array of Webpack plugins
  */
 function extractRelevantNodeModules(outputPath) {
-  return [copyPackageLockFile(outputPath), generatePackageJson()];
+  return [copyYarnLockFile(outputPath), generatePackageJson()];
 }
 /**
  * Copy the NPM package lock file to the bundle to make sure that the right dependencies are
@@ -41,8 +41,8 @@ function extractRelevantNodeModules(outputPath) {
  * @param {String} outputPath The path to the bundle being built
  * @returns {*} A Webpack plugin
  */
-function copyPackageLockFile(outputPath) {
-  return new CopyPlugin([{ from: 'package-lock.json', to: path.join(outputPath, 'package-lock.json') }]);
+function copyYarnLockFile(outputPath) {
+  return new CopyPlugin([{ from: 'yarn.lock', to: path.join(outputPath, 'yarn.lock') }]);
 }
 /**
  * Generate a package.json file that contains only the dependencies which are actually
