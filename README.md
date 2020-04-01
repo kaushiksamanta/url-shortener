@@ -81,7 +81,7 @@ docker-compose -f docker-compose_dev.yml down
 
 4) ~~Add unit tests for api and frontend using jest.~~
 
-5) Configure Circle CI for docker build and unit tests.
+5) ~~Configure Circle CI for docker build and unit tests.~~
 
 # Dockerhub images (Public)
 1) https://hub.docker.com/repository/docker/kaushiksamanta/url-shortener-api
