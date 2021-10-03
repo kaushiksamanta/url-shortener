@@ -75,7 +75,7 @@ docker-compose -f docker-compose_dev.yml down
 
 1) ~~Setting up Nginx as a load balancer and reverse proxy.~~
 
-2) LRU Caching strategy for top frequent url's using Redis.
+2) LFU Caching strategy for top frequent url's using Redis.
 
 3) ~~Setup the project for production ready.~~
 
