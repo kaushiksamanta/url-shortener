@@ -44,16 +44,18 @@ touch dev.env
 
 2) Set the below variables in the dev.env file
 
-| Name               | Value            |
-| ------------------ | ---------------- |
-| POSTGRES_HOST      | url-shortener-db |
-| POSTGRES_PORT      | 5432             |
-| POSTGRES_USER      | postgres         |
-| POSTGRES_PASSWORD  | 12345            |
-| POSTGRES_DATABASE  | url-shortener    |
-| PORT (Api Server)  | 3333             |
-| APP_MODE           | DEV              |
-| URL_DOMAIN         | localhost        |
+| Name               | Value               |
+| ------------------ | ------------------- |
+| POSTGRES_HOST      | url-shortener-db    |
+| POSTGRES_PORT      | 5432                |
+| POSTGRES_USER      | postgres            |
+| POSTGRES_PASSWORD  | 12345               |
+| POSTGRES_DATABASE  | url-shortener       |
+| REDIS_HOST         | url-shortener-redis |
+| REDIS_PORT         | 6379                |
+| PORT (Api Server)  | 3333                |
+| APP_MODE           | DEV                 |
+| URL_DOMAIN         | localhost           |
 
 1) Build all the docker files using the shell script using dev as environment.
 
@@ -75,11 +77,11 @@ docker-compose -f docker-compose_dev.yml down
 
 1) ~~Setting up Nginx as a load balancer and reverse proxy.~~
 
-2) LFU Caching strategy for top frequent url's using Redis.
+2) ~~Top frequent url's using Redis sorted sets.~~
 
 3) ~~Setup the project for production ready.~~
 
-4) ~~Add unit tests for api and frontend using jest.~~
+4) Add unit tests for api and frontend using jest.
 
 5) ~~Configure Circle CI for docker build and unit tests.~~
 
@@ -93,7 +95,10 @@ docker-compose -f docker-compose_dev.yml down
 
 <img width="1440" alt="Screen Shot 2020-03-02 at 9 38 47 PM" src="https://user-images.githubusercontent.com/14096113/75738532-91f61d00-5cd0-11ea-913a-137bbc050697.png">
 
-2) Docker compose runner:-
+<img width="1440" alt="Screen Shot 2020-03-02 at 9 38 47 PM" src="https://user-images.githubusercontent.com/14096113/135769064-83cdc32a-abee-41a7-b6ab-81c0458f9a26.png">
+
+
+1) Docker compose runner:-
 <img width="1332" alt="Screen Shot 2020-03-02 at 9 32 11 PM" src="https://user-images.githubusercontent.com/14096113/75737670-59554400-5cce-11ea-98f6-680039ebd74b.png">
 
 3) Docker build:-

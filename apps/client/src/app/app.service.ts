@@ -14,4 +14,7 @@ export class AppService {
     });
   }
 
+  getTopTenShortenUrls() {
+    return this.http.get('/api/topTenUrls');
+  }
 }

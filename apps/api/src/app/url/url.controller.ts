@@ -15,6 +15,11 @@ export class UrlController {
     return this.urlService.shortUrl(createShortUrlDto);
   }
 
+  @Get('/topTenUrls')
+  async getTopTenUrls() {
+    return this.urlService.getTopTenFrequentUrls();
+  }
+
   @Get('/:hash')
   async getShortUrl(@Param('hash') hash: string, @Res() res) {
     try {
@@ -28,4 +33,5 @@ export class UrlController {
       return res.redirect('/');
     }
   }
+
 }

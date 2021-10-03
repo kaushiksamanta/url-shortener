@@ -16,6 +16,7 @@ services:
       - node_modules
     links:
       - url-shortener-db
+      - url-shortener-redis
   url-shortener-client:
     build:
       context: .
@@ -37,3 +38,8 @@ services:
     volumes:
       - ./postgresql:/var/lib/postgresql
       - ./postgresql_data:/var/lib/postgresql/data
+  url-shortener-redis:
+    container_name: url-shortener-redis
+    image: redis:6.2.5
+    ports:
+     - "6379:6379"
